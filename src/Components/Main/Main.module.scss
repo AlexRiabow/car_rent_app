@@ -1,0 +1,72 @@
+@import "/src/styles/colors.scss";
+.mainPage{
+height: 100vh;
+width: 100vw;
+display: flex; 
+}
+.titlePage{
+display: flex;
+}
+.sideLine{
+background-color: $mblack;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 40px 20px 30px 20px;    
+}
+.languageButton{
+color: $mgreen;
+}
+.mainBody{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 32px 64px;
+}
+.bodyTop{
+display: flex;
+justify-content: space-between;
+}
+.cityPick{
+    display: flex;
+}
+.cityName{
+    color: $dgray;
+    margin-left: 7.5px;
+}
+.motto{
+    color: $mgreen;
+    font-size: 30px;
+    font-weight: bold;
+}
+.bodyMiddle{
+    display: flex;
+    flex-direction: column;
+    
+}
+.middleTopText{
+    color: $mblack;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 66px;
+}
+.middleText{
+    color: $mgreen;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 66px;
+}
+.middleBottomText{
+    color: $dgray ;
+    font-size: 26px;
+}
+.bodyBottom{
+    display: flex;
+    justify-content: space-between;
+}
+.tradeMark{
+    color: $dgray;
+}
+.phone{
+    color: $mblack;
+}
