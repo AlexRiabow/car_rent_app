@@ -1,0 +1,48 @@
+@import "/src/styles/colors.scss";
+.button{
+    height: 48px;
+    width: 287px;
+    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+    background-blend-mode: darken;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $wgray;
+    border: 0;
+
+    &:hover{
+       background-color: rgba($color: #000000, $alpha: 0.25);
+    }
+    &:active{
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+}
+
+.smallest{
+    width: 164px;
+    border-radius: 4px;
+}
+
+.smaller{
+    width: 177px;
+}
+
+.small{
+    width: 250px;
+}
+
+.red{
+    background: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);
+}
+
+.dark_green{
+    background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
+}
+
+.blue{
+    background: linear-gradient(90deg, #132949 0%, #0C7B67 100%);
+}
+
+.purple{
+    background: linear-gradient(90deg, #281349 0%, #720C7B 100%);
+}

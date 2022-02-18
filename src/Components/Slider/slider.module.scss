@@ -1,0 +1,65 @@
+@import "/src/styles/colors.scss";
+.slider{
+    display: flex;
+    height: 100vh;
+    background: url(../../images/jp-valery-1052513-unsplash.jpg) no-repeat center/100%;
+}
+.sliderGradient{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.leftButton{
+    width: 64px;
+    text-align: center;
+    padding-top: 55%;
+    &:hover{
+        background-color: rgb(14, 194, 97,0.2);
+    }
+}
+.rightButton{
+    width: 64px;
+    text-align: center;
+    padding-top: 55%;
+    &:hover{
+        background-color: rgb(14, 194, 97,0.2);
+    }
+}
+.slideWrap{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.slide{
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slideTitle{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+.slideDesk{
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 22px;
+    color: $wgray;
+}
+.sliderButton{
+    margin-bottom: 130px;
+}
+.sliderDots{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.sliderDot{
+    border-radius: 8px;
+    border:solid $dgray 4px;
+    margin-right: 8px;
+}

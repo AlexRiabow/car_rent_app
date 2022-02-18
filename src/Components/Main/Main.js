@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 import styles from './Main.module.scss';
 import landMark from '../../icons/Landmark.svg';
 import burger from '../../icons/burger.svg';
+import Slider from '../Slider/slider';
 
 const Main = () =>{
     return(
@@ -30,16 +31,18 @@ const Main = () =>{
                     <span className={styles.middleTopText} >Каршеринг</span>
                     <span className={styles.middleText} >Need for drive</span>
                     <span className={styles.middleBottomText} >Поминутная аренда авто твоего города</span>
-                    <Button></Button> 
+                    <Button size = "small">
+                        Забронировать
+                    </Button> 
                 </div>
                 <div className={styles.bodyBottom}>
                     <span className={styles.tradeMark}>© 2016-2019 «Need for drive»</span>
-                    <span className={styles.phone}>8 (495) 234-22-44</span>
+                    <a  href="" className={styles.phone}>8 (495) 234-22-44</a>
                 </div>
             </div>
         </div>
         <div className={styles.slider}>
-
+        <Slider></Slider>
         </div>
     </div>
     );
