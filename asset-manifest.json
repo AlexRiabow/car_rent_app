@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/car_rent_app/static/css/main.742a3c9a.css",
+    "main.js": "/car_rent_app/static/js/main.35714a12.js",
+    "static/js/787.0b123455.chunk.js": "/car_rent_app/static/js/787.0b123455.chunk.js",
+    "static/media/Landmark.svg": "/car_rent_app/static/media/Landmark.480be180d9ca371c17b43a1a70c32ce9.svg",
+    "index.html": "/car_rent_app/index.html",
+    "static/media/burger.svg": "/car_rent_app/static/media/burger.33a037861fe40a57f066c4407f3003d5.svg",
+    "main.742a3c9a.css.map": "/car_rent_app/static/css/main.742a3c9a.css.map",
+    "main.35714a12.js.map": "/car_rent_app/static/js/main.35714a12.js.map",
+    "787.0b123455.chunk.js.map": "/car_rent_app/static/js/787.0b123455.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.742a3c9a.css",
+    "static/js/main.35714a12.js"
+  ]
+}
