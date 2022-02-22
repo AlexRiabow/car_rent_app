@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/car_rent_app/static/css/main.677cd1b6.css",
-    "main.js": "/car_rent_app/static/js/main.634adebc.js",
+    "main.css": "/car_rent_app/static/css/main.fe51d69a.css",
+    "main.js": "/car_rent_app/static/js/main.0d102155.js",
     "static/js/787.0b123455.chunk.js": "/car_rent_app/static/js/787.0b123455.chunk.js",
     "static/media/jp-valery-1052513-unsplash.jpg": "/car_rent_app/static/media/jp-valery-1052513-unsplash.99555a72239613871d0b.jpg",
+    "static/media/Instagram.svg": "/car_rent_app/static/media/Instagram.98094ec43567d0a8402f.svg",
+    "static/media/Telegram.svg": "/car_rent_app/static/media/Telegram.e8137bbee4b573f3f5a8.svg",
     "static/media/Landmark.svg": "/car_rent_app/static/media/Landmark.480be180d9ca371c17b43a1a70c32ce9.svg",
     "index.html": "/car_rent_app/index.html",
-    "static/media/burger.svg": "/car_rent_app/static/media/burger.33a037861fe40a57f066c4407f3003d5.svg",
+    "static/media/facebook.svg": "/car_rent_app/static/media/facebook.c1876cc3ac4c922d5a12.svg",
     "static/media/L_arrow.svg": "/car_rent_app/static/media/L_arrow.dd0226d1ef40f8836d758d1d948bcb88.svg",
     "static/media/R_arrow.svg": "/car_rent_app/static/media/R_arrow.9d87137d3cdc657274dc93047421f39a.svg",
-    "main.677cd1b6.css.map": "/car_rent_app/static/css/main.677cd1b6.css.map",
-    "main.634adebc.js.map": "/car_rent_app/static/js/main.634adebc.js.map",
+    "main.fe51d69a.css.map": "/car_rent_app/static/css/main.fe51d69a.css.map",
+    "main.0d102155.js.map": "/car_rent_app/static/js/main.0d102155.js.map",
     "787.0b123455.chunk.js.map": "/car_rent_app/static/js/787.0b123455.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.677cd1b6.css",
-    "static/js/main.634adebc.js"
+    "static/css/main.fe51d69a.css",
+    "static/js/main.0d102155.js"
   ]
 }
