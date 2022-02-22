@@ -1,0 +1,211 @@
+@import "/src/styles/colors.scss";
+@import "/src/styles/breakpoints.scss";
+
+.mainPage{
+height: 100vh;
+width: 100vw;
+display: flex; 
+}
+.titlePage{
+width: 100%;
+display: flex;
+}
+.sideLine{
+background-color: $mblack;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 32px 5px 23px 5px;
+width: 64px;
+    @media (max-width:$tab){
+        width: 85px;
+    }
+    @media (max-width:$mob){
+        position: absolute;
+        padding: 0px;
+        width: 0;
+        top: 29px;
+        left: 32px;
+        height: 5%;
+        background-color: white;
+    }     
+}
+.burgerBtn{
+    width: 24px;
+    height: 21px;
+    position: relative;
+    cursor: pointer;
+    @media (max-width:$mob){
+    } 
+}
+.burgerBtn span{
+    position: absolute;
+        top: 9px;
+        width: 22px;
+        height: 1px;
+        border: solid 1px $wgray;
+        border-radius: 8px;
+        background-color: $wgray;
+            @media (max-width:$mob){
+                border: solid 1px $mblack;
+                background-color: $mblack;
+            }
+}
+.burgerBtn::after{
+ content: '';
+ position: absolute;
+ top: 0;
+ width: 22px;
+ height: 1px;
+ border: solid 1px $wgray;
+ border-radius: 8px;
+ background-color: $wgray;
+    @media (max-width:$mob){
+        border: solid 1px $mblack;
+        background-color: $mblack;
+    }    
+}
+.burgerBtn::before{
+ content: '';
+ position: absolute;
+ bottom: 0;
+ width: 22px;
+ height: 1px;
+ border: solid 1px $wgray;
+ border-radius: 8px;
+ background-color: $wgray;
+    @media (max-width:$mob){
+        border: solid 1px $mblack;
+        background-color: $mblack;
+    }      
+}
+.languageButton{
+text-align: center;
+color: $mgreen;
+font-size: 13px;
+line-height: 25px;
+height: 30px;
+width: 30px;
+cursor: pointer;
+    @media (max-width:$mob){
+        display: none;
+    } 
+    &:hover{
+        color: $wgray;
+        border: 1px $wgray solid;
+        border-radius: 100px;
+    }
+    &:active{
+        color: $mgreen;
+        border: 1px $wgray solid;
+        border-radius: 100px;
+    }
+}
+.mainBody{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 32px 64px;
+width: 100%;
+    @media (max-width:$desk-m){
+        padding: 32px;
+    }
+    @media (max-width:$mob){
+        padding: 0px;
+    }
+}
+.bodyTop{
+display: flex;
+justify-content: space-between;
+    @media (max-width:$mob){
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+}
+.cityPick{
+    display: flex;
+}
+.cityName{
+    color: $dgray;
+    margin-left: 7.5px;
+}
+.motto{
+    color: $mgreen;
+    font-size: 30px;
+    font-weight: bold;
+}
+.bodyMiddle{
+    display: flex;
+    flex-direction: column;
+}
+.middleTopText{
+    color: $mblack;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 66px;
+        @media (max-width:$mob){
+            font-size: 32px;
+            line-height: 100%;
+            margin-left: 16px;
+        }
+}
+.middleText{
+    color: $mgreen;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 66px;
+    margin-bottom: 34px;
+        @media (max-width:$mob){
+            font-size: 32px;
+            line-height: 100%;
+            margin-bottom: 16px;
+            margin-left: 16px;
+        }
+}
+.middleBottomText{
+    color: $dgray ;
+    font-size: 26px;
+    margin-bottom: 60px;
+        @media (max-width:$mob){
+            font-size: 18px;
+            margin-bottom: 32px;
+            margin-left: 16px;
+        }
+}
+.bodyBottom{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+        @media (max-width:$mob){
+            margin-top: 173px;
+            padding: 16px;
+            background: $mblack;
+            flex-direction: column-reverse;
+            align-items:flex-end;
+        }
+}
+.tradeMark{
+    color: $dgray;
+    @media (max-width:$mob){
+        font-size: 13px;
+        color: $wgray; 
+    }
+}
+.phone{
+    color: $mblack;
+    text-decoration: none;
+    @media (max-width:$mob){
+        color:$mgreen;
+        margin-bottom: 8px;
+        font-size: 13px; 
+    }
+    &:hover{
+        color:$mgreen;
+    }
+    &:active{
+        color:$mgreen;
+    }
+}
