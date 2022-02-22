@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
 import styles from './Main.module.scss';
 import landMark from '../../icons/Landmark.svg';
-import burger from '../../icons/burger.svg';
 import Slider from '../Slider/slider';
+import Menu from '../Menu/Menu';
+import cn from "classnames";
+
 
 const Main = () =>{
+    const [menuActive, setMenuActive] = useState(false);
     return(
     <div className = {styles.mainPage}>
         <div className={styles.titlePage}>
             <div className={styles.sideLine}>
-                <div className={styles.burgerMenu}>
-                    <img src={burger} alt="burger"> 
-                    </img>
+                <div className={styles.burgerBtn} onClick ={()=> setMenuActive(!menuActive)}>
+                    <span></span>
                 </div>
                 <div className={styles.languageButton}>
                     <span>Eng</span>
@@ -41,9 +43,8 @@ const Main = () =>{
                 </div>
             </div>
         </div>
-        <div className={styles.slider}>
         <Slider></Slider>
-        </div>
+        <Menu active = {menuActive} setActive = {setMenuActive}></Menu>
     </div>
     );
 }

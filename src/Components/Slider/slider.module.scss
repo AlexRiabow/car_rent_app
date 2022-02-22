@@ -1,8 +1,20 @@
 @import "/src/styles/colors.scss";
+@import "/src/styles/breakpoints.scss";
+
 .slider{
     display: flex;
     height: 100vh;
     background: url(../../images/jp-valery-1052513-unsplash.jpg) no-repeat center/100%;
+    background-size: cover;
+    @media (max-width:$desk-m){
+        width: 67%;
+    }
+    @media (max-width:$tab){
+        display: none;
+    }
+    @media (max-width:$mob){
+        display: none;
+    }
 }
 .sliderGradient{
     display: flex;
@@ -14,16 +26,26 @@
     width: 64px;
     text-align: center;
     padding-top: 55%;
+    cursor: pointer;
     &:hover{
         background-color: rgb(14, 194, 97,0.2);
+    }
+    @media (max-width:$desk-m){
+        width: 32px;
+        padding-top: 75%;
     }
 }
 .rightButton{
     width: 64px;
     text-align: center;
     padding-top: 55%;
+    cursor: pointer;
     &:hover{
         background-color: rgb(14, 194, 97,0.2);
+    }
+    @media (max-width:$desk-m){
+        width: 32px;
+        padding-top: 75%;
     }
 }
 .slideWrap{
@@ -36,11 +58,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: $desk-m) {
+        padding-top: 70%;
+    } 
 }
 .slideTitle{
     font-size: 40px;
     font-weight: 500;
     color: white;
+    @media (max-width:$desk-m){
+        font-size: 32px;
+    }
 }
 .slideDesk{
     font-weight: 300;
@@ -49,6 +77,9 @@
     font-size: 24px;
     line-height: 22px;
     color: $wgray;
+    @media (max-width:$desk-m){
+        font-size: 22px;
+    }
 }
 .sliderButton{
     margin-bottom: 130px;
