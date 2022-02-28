@@ -1,0 +1,44 @@
+@import "/src/styles/colors.scss";
+@import "/src/styles/breakpoints.scss";
+
+.page{
+    display: flex;
+    height: 100vh;
+    min-width: 100%;
+    max-width: 100%;
+}
+.pageGradient{
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%) ;
+}
+.pageContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 99px;
+    height: 100%;
+}
+.slideTitle{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    @media (max-width:$desk-m){
+        font-size: 32px;
+    }
+}
+.slideDesk{
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 22px;
+    color: $wgray;
+    @media (max-width:$desk-m){
+        font-size: 22px;
+    }
+}
+.sliderButton{
+    margin-bottom: 130px;
+}

@@ -2,95 +2,69 @@
 @import "/src/styles/breakpoints.scss";
 
 .slider{
+    position: relative;
     display: flex;
     height: 100vh;
-    background: url(../../images/jp-valery-1052513-unsplash.jpg) no-repeat center/100%;
-    background-size: cover;
-    @media (max-width:$desk-m){
-        width: 67%;
-    }
     @media (max-width:$tab){
         display: none;
     }
-    @media (max-width:$mob){
-        display: none;
-    }
-}
-.sliderGradient{
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 .leftButton{
+    position: absolute;
+    left: 0;
     width: 64px;
     text-align: center;
-    padding-top: 55%;
+    height: 100%;
     cursor: pointer;
     &:hover{
         background-color: rgb(14, 194, 97,0.2);
     }
     @media (max-width:$desk-m){
         width: 32px;
-        padding-top: 75%;
-    }
+    }  
 }
 .rightButton{
+    position: absolute;
+    right: 0;
     width: 64px;
     text-align: center;
-    padding-top: 55%;
+    height: 100%;
     cursor: pointer;
     &:hover{
         background-color: rgb(14, 194, 97,0.2);
     }
     @media (max-width:$desk-m){
         width: 32px;
-        padding-top: 75%;
     }
 }
-.slideWrap{
+.slideWindow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.allPagesContainer{
     display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-.slide{
-    height: 94%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media (max-width: $desk-m) {
-        padding-top: 70%;
-    } 
-}
-.slideTitle{
-    font-size: 40px;
-    font-weight: 500;
-    color: white;
-    @media (max-width:$desk-m){
-        font-size: 32px;
-    }
-}
-.slideDesk{
-    font-weight: 300;
-    margin-top: 8px;
-    margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 22px;
-    color: $wgray;
-    @media (max-width:$desk-m){
-        font-size: 22px;
-    }
-}
-.sliderButton{
-    margin-bottom: 130px;
+    height: 100%;
+
+    transition: all 0.4s;
 }
 .sliderDots{
+    position: absolute;
+    right: 45%;
+    bottom: 32px;
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
 }
 .sliderDot{
     border-radius: 8px;
     border:solid $dgray 4px;
     margin-right: 8px;
+}
+.sliderDotActive{
+    border:solid $mgreen 4px;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 37%;
 }

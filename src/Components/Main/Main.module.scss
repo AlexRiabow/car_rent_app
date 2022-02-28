@@ -7,8 +7,14 @@ width: 100vw;
 display: flex; 
 }
 .titlePage{
-width: 100%;
+width: 53%;
 display: flex;
+    @media(max-width: $desk){
+        width: 53%;
+    }
+    @media(max-width: $desk-m){
+        width: 65%;
+    }
 }
 .sideLine{
 background-color: $mblack;
