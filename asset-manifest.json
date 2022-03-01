@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/car_rent_app/static/css/main.fe51d69a.css",
-    "main.js": "/car_rent_app/static/js/main.0d102155.js",
+    "main.css": "/car_rent_app/static/css/main.f99bf081.css",
+    "main.js": "/car_rent_app/static/js/main.f1b90677.js",
     "static/js/787.0b123455.chunk.js": "/car_rent_app/static/js/787.0b123455.chunk.js",
-    "static/media/jp-valery-1052513-unsplash.jpg": "/car_rent_app/static/media/jp-valery-1052513-unsplash.99555a72239613871d0b.jpg",
+    "static/media/bg4.jpg": "/car_rent_app/static/media/bg4.2cc2a6fa551056a41370.jpg",
+    "static/media/bg1.jpg": "/car_rent_app/static/media/bg1.99555a72239613871d0b.jpg",
+    "static/media/bg3.jpg": "/car_rent_app/static/media/bg3.dd5c268f819f3fb2d627.jpg",
+    "static/media/bg2.jpg": "/car_rent_app/static/media/bg2.8e2236fce95dab775316.jpg",
     "static/media/Instagram.svg": "/car_rent_app/static/media/Instagram.98094ec43567d0a8402f.svg",
     "static/media/Telegram.svg": "/car_rent_app/static/media/Telegram.e8137bbee4b573f3f5a8.svg",
     "static/media/Landmark.svg": "/car_rent_app/static/media/Landmark.480be180d9ca371c17b43a1a70c32ce9.svg",
@@ -11,12 +14,12 @@
     "static/media/facebook.svg": "/car_rent_app/static/media/facebook.c1876cc3ac4c922d5a12.svg",
     "static/media/L_arrow.svg": "/car_rent_app/static/media/L_arrow.dd0226d1ef40f8836d758d1d948bcb88.svg",
     "static/media/R_arrow.svg": "/car_rent_app/static/media/R_arrow.9d87137d3cdc657274dc93047421f39a.svg",
-    "main.fe51d69a.css.map": "/car_rent_app/static/css/main.fe51d69a.css.map",
-    "main.0d102155.js.map": "/car_rent_app/static/js/main.0d102155.js.map",
+    "main.f99bf081.css.map": "/car_rent_app/static/css/main.f99bf081.css.map",
+    "main.f1b90677.js.map": "/car_rent_app/static/js/main.f1b90677.js.map",
     "787.0b123455.chunk.js.map": "/car_rent_app/static/js/787.0b123455.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe51d69a.css",
-    "static/js/main.0d102155.js"
+    "static/css/main.f99bf081.css",
+    "static/js/main.f1b90677.js"
   ]
 }
