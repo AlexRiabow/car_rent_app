@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     height: 100vh;
+    width: 40%;
     @media (max-width:$tab){
         display: none;
     }
@@ -54,6 +55,7 @@
     bottom: 32px;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .sliderDot{
     border-radius: 8px;

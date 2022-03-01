@@ -33,7 +33,7 @@
 .small{
     width: 250px;
     @media (max-width:$mob){
-        width: 320px;
+        width: 100%;
         border-radius: 0;
     }
 }

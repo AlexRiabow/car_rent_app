@@ -1,11 +1,10 @@
-import React, { useState,useRef, useEffect } from "react";
+import React, {useState} from "react";
 import Button from "../Button/Button";
 import styles from './Main.module.scss';
 import landMark from '../../icons/Landmark.svg';
 import Slider from '../Slider/slider';
 import SliderPage from '../Slider/sliderPage';
 import Menu from '../Menu/Menu';
-import cn from "classnames";
 import bg1 from '../../images/bg1.jpg'
 import bg2 from '../../images/bg2.jpg'
 import bg3 from '../../images/bg3.jpg'
@@ -15,24 +14,6 @@ import bg4 from '../../images/bg4.jpg'
 
 const Main = () =>{
     const [menuActive, setMenuActive] = useState(false);
-    const [mainWidth, setMainWidth] = useState(0)
-    const mainRef = useRef()
-
-    useEffect(()=>{
-            const resizeHandler = () => {
-                const _width = mainRef.current.offsetWidth
-                console.log(_width)
-                setMainWidth(_width)
-            }
-    
-            resizeHandler()
-            window.addEventListener( 'resize',resizeHandler)
-            
-            return () => {
-                window.removeEventListener( 'resize',resizeHandler)
-            }
-    
-        }, [])
 
     return(
     <div className = {styles.mainPage}>
@@ -45,7 +26,7 @@ const Main = () =>{
                     <span>Eng</span>
                 </div>
             </div>
-            <div className= {styles.mainBody} ref={mainRef} >
+            <div className= {styles.mainBody}>
                 <div className= {styles.bodyTop}>
                     <span className={styles.motto}> Need for drive</span>
                     <div className= {styles.cityPick}>
@@ -68,7 +49,7 @@ const Main = () =>{
                 </div>
             </div>
         </div>
-        <Slider Width={mainWidth}>
+        <Slider>
             <SliderPage slideTitle="Бесплатная парковка" slideDesk="Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах." btnColor="dark_green" slideBackGround={bg1} > </SliderPage>
             <SliderPage slideTitle="Страховка" slideDesk="Полная страховка страховка автомобиля." btnColor="blue" slideBackGround={bg2}> </SliderPage>
             <SliderPage slideTitle="Бензин" slideDesk="Полный бак на любой заправке города за наш счёт" btnColor="red" slideBackGround={bg3}> </SliderPage>
